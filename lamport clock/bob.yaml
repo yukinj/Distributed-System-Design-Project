@@ -1,0 +1,23 @@
+#Project 3
+#Yu Luna    yuki.coco@csu.fullerton.edu
+#Tevin Vu   tuanvu01@csu.fullerton.edu
+#bob.yaml   config file for bob's tuplespace and adapter
+---
+name: bob
+uri: druby://localhost:12347
+notify:
+  - address: 224.0.0.1
+    port: 54321
+  - address: 224.0.0.1
+    port: 54322
+  - address: 224.0.0.1
+    port: 54323
+filters:
+  - [ ~, ~ ]
+  - [ ~, ~, ~]
+  - [ ~, ~, ~, ~]
+  - [ ~, ~, ~, ~, ~]
+adapter:
+  host: localhost
+  port: 8002
+  max_clients: 32
