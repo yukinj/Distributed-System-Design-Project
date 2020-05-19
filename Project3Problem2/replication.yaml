@@ -1,0 +1,16 @@
+---
+name: replication
+uri: druby://localhost:12350
+notify:
+  - address: 224.0.0.1
+    port: 543230
+
+filters:
+  - [ ~, ~ ]
+  - [ ~, ~, ~]
+  - [ ~, ~, ~, ~]
+  - [ ~, ~, ~, ~, ~]
+adapter:
+  host: localhost
+  port: 8005
+  max_clients: 32
